@@ -14,9 +14,9 @@ public class RotateArray {
         int[] result = new int[n];
 
         // create new array and update the values
-        for (int i = 0; i < n; i++) {
-            int newPos = (i + k) % n;
-            result[newPos] = nums[i];
+        for (int currPos = 0; currPos < n; currPos++) {
+            int newPos = (currPos + k) % n;
+            result[newPos] = nums[currPos];
         }
 
         // copy back to original array
